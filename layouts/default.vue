@@ -1,12 +1,11 @@
 <script setup>
-const { event, formattedDate } = await useEvent();
+const { event } = await useEvent();
 
 const activeModal = ref(false);
 
 useSeoMeta({
   ogImage: "/og.jpg",
-  description:
-    formattedDate + " @ " + event.location.name + ": " + event.description,
+  description: event.description,
 });
 
 const activeNavbar = ref(false);
@@ -32,28 +31,8 @@ useHead({
   ],
   link: [
     {
-      rel: "icon",
-      type: "image/png",
-      href: "/favicon-96x96.png",
-      sizes: "96x96",
-    },
-    {
-      rel: "icon",
-      type: "image/svg+xml",
-      href: "/favicon.svg",
-    },
-    {
       rel: "shortcut icon",
       href: "/favicon.ico",
-    },
-    {
-      rel: "apple-touch-icon",
-      sizes: "180x180",
-      href: "/apple-touch-icon.png",
-    },
-    {
-      rel: "manifest",
-      href: "/site.webmanifest",
     },
   ],
 });
@@ -69,7 +48,7 @@ useHead({
         style="
           background-image: url(/images/hero.jpg);
           background-size: cover;
-          background-position: 0% 50%;
+          background-position: 0% 80%;
           min-height: 50vh;
         "
       >
@@ -85,7 +64,7 @@ useHead({
           height: 100%;
           background-image: url(/images/hero.jpg);
           background-size: cover;
-          background-position: 75% 0%;
+          background-position: 0% 0%;
         "
       >
         &nbsp;
@@ -117,98 +96,8 @@ useHead({
       <div class="my-6 px-6">
         <div class="content">
           <h1 class="title">{{ event.name }}</h1>
-          <p class="subtitle mb-6">
-            {{ formattedDate }} @ {{ event.location.name }}
-          </p>
         </div>
       </div>
-
-      <nav
-        class="navbar px-6 is-transparent is-light"
-        style="background-color: transparent"
-      >
-        <div class="navbar-brand">
-          <a
-            class="navbar-burger"
-            :class="{ 'is-active': activeNavbar }"
-            @click="toggleNavbar"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div class="navbar-menu" :class="{ 'is-active': activeNavbar }">
-          <div class="navbar-start">
-            <a
-              href="/"
-              class="navbar-item"
-              :class="{ 'is-selected': route.path == '/' }"
-              >Startseite</a
-            >
-
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a
-                class="navbar-link"
-                :class="{ 'is-selected': route.path.startsWith('/wettkampf') }"
-              >
-                Wettkampf
-              </a>
-
-              <div class="navbar-dropdown">
-                <a
-                  href="/wettkampf/tickets"
-                  :class="{ 'is-selected': route.path == '/wettkampf/tickets' }"
-                  class="navbar-item"
-                >
-                  Tickets
-                </a>
-                <a
-                  href="/wettkampf/konzept"
-                  :class="{ 'is-selected': route.path == '/wettkampf/konzept' }"
-                  class="navbar-item"
-                >
-                  Konzept
-                </a>
-                <a
-                  href="/wettkampf/zeitplan"
-                  :class="{
-                    'is-selected': route.path == '/wettkampf/zeitplan',
-                  }"
-                  class="navbar-item"
-                >
-                  Zeitplan
-                </a>
-                <a
-                  href="/wettkampf/regeln"
-                  :class="{ 'is-selected': route.path == '/wettkampf/regeln' }"
-                  class="navbar-item"
-                >
-                  Regeln
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a
-                  href="/anmeldung"
-                  class="button"
-                  :class="[
-                    route.path == '/anmeldung' ? 'is-light' : 'is-success',
-                  ]"
-                >
-                  Anmeldung 2026
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
 
       <slot />
 
@@ -218,16 +107,6 @@ useHead({
         </p>
       </div>
 
-      <footer class="footer px-6 pb-0">
-        <div class="container is-max-desktop">
-          <p>
-            Mit sportlicher Unterstützung der
-            <a href="//www.highlight-towers.de" style="color: inherit"
-              >Highlight Towers München</a
-            >.
-          </p>
-        </div>
-      </footer>
       <CompetitionsFooter :event="event" class="px-6 pb-6" />
     </div>
   </div>

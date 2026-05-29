@@ -12,7 +12,7 @@ useSeoMeta({
       <p>Angaben gemäß § 5 DDG</p>
 
       <p>
-        Munich Sunrise<br />
+        Eskalation<br />
         c/o Stefan Matheis<br />
         Alpenstraße 19<br />
         87435 Kempten
@@ -21,7 +21,7 @@ useSeoMeta({
       <h4>Kontakt</h4>
       <p>
         Telefon: +49 160 970 48 114<br />
-        E-Mail: stefan.matheis@munich-sunrise.de
+        E-Mail: stefan@gelungen.es
       </p>
 
       <h4>Umsatzsteuer-ID</h4>

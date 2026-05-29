@@ -1,5 +1,5 @@
-import { event, formattedDate } from "../event";
+import { event } from "../event";
 
 export const useEvent = async () => {
-  return { event, formattedDate };
+  return { event };
 };
