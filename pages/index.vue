@@ -6,21 +6,21 @@ const isVideoActive = ref(false);
   <div class="my-6 px-6">
     <div class="content">
       <p>
-        Treppenläufe für Feuerwehr sind nichts Neues. Kurze Treppen, lange
-        Treppen, drinnen oder draußen - alles schon mal irgendwie da gewesen.
-        Auch Läufe bei denen man mehrmals hinauf mussten, waren schon da. Aber
-        bewegt hat sich die Treppe nie.
+        Treppenläufe für Feuerwehrleute gibt es viele. Hochhäuser,
+        Skiflugschanzen, Aussichtstürme – alles schon gelaufen. Mal kurz, mal
+        lang, mal mehrfach hintereinander.
       </p>
 
+      <p><strong>In Bewegung</strong> aber war die Treppe bisher nie!</p>
+
       <p>
-        Aber warum eigentlich nicht? In Budapest wird gegen eine Rolltreppe
-        gelaufen, wie man im
+        In Budapest wird bereits gegen eine Rolltreppe gelaufen. Als wir den
         <a
           @click.prevent="isVideoActive = true"
           href="https://www.instagram.com/p/DY1t5xMC8JE/"
           >Instagram-Beitrag von Jánosa Bence</a
         >
-        sehen kann. Wäre doch mal eine Idee ..
+        gesehen haben, war klar: <strong>Das brauchen wir auch.</strong>
       </p>
 
       <div id="video" class="mb-4">
