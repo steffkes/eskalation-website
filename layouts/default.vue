@@ -96,6 +96,7 @@ useHead({
       <div class="my-6 px-6">
         <div class="content">
           <h1 class="title">{{ event.name }}</h1>
+          <p class="subtitle">{{ event.description }}</p>
         </div>
       </div>
 
