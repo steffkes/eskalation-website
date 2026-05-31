@@ -57,6 +57,13 @@ const isVideoActive = ref(false);
           ></iframe>
         </div>
       </div>
+
+      <p>
+        Hast du Bock drauf? Dann trag deine Kontaktdaten ein und wir melden uns
+        sobald es etwas genaueres zum Wettkampf gibt ツ
+      </p>
+
+      <InterestForm />
     </div>
   </div>
 </template>
