@@ -1,7 +1,7 @@
 export const event = {
   "@context": "https://schema.org",
   "@type": "SportsEvent",
-  url: "http://eskalation.gelungen.es",
+  url: "https://eskalation.gelungen.es",
   name: "Eskalation",
   description: "Rise Against the Machine",
   organizer: {
