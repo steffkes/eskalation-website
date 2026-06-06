@@ -4,7 +4,7 @@ const { event } = await useEvent();
 const activeModal = ref(false);
 
 useSeoMeta({
-  ogImage: "/og.jpg",
+  ogImage: event.url + "/og.jpg",
   description: event.description,
 });
 
