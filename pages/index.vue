@@ -4,7 +4,7 @@ const isVideoActive = ref(false);
 
 <template>
   <div class="my-6 px-6">
-    <QuoteElement name="Marcus S." department="FF Taufkirchen/Vils">
+    <QuoteElement name="Marcus" department="FF Taufkirchen/Vils">
       Ja bist du deppert 🙈
     </QuoteElement>
 
@@ -63,7 +63,7 @@ const isVideoActive = ref(false);
       </div>
     </div>
 
-    <QuoteElement name="Manuel B." department="BwF Laupheim">
+    <QuoteElement name="Manuel" department="BwF Laupheim">
       Das ist mal ne wilde Sache 🦾
     </QuoteElement>
 
@@ -76,7 +76,7 @@ const isVideoActive = ref(false);
       <InterestForm />
     </div>
 
-    <QuoteElement name="Martin F." department="FF Salzkotten">
+    <QuoteElement name="Martin" department="FF Salzkotten">
       ja geil
     </QuoteElement>
   </div>
