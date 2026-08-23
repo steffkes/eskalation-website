@@ -65,5 +65,17 @@ const isVideoActive = ref(false);
 
       <InterestForm />
     </div>
+
+    <QuoteElement name="Marcus S." department="FF Taufkirchen/Vils">
+      Ja bist du deppert 🙈
+    </QuoteElement>
+
+    <QuoteElement name="Manuel B." department="BwF Laupheim">
+      Das ist mal ne wilde Sache 🦾
+    </QuoteElement>
+
+    <QuoteElement name="Martin F." department="FF Salzkotten">
+      ja geil
+    </QuoteElement>
   </div>
 </template>
