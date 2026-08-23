@@ -4,6 +4,10 @@ const isVideoActive = ref(false);
 
 <template>
   <div class="my-6 px-6">
+    <QuoteElement name="Marcus S." department="FF Taufkirchen/Vils">
+      Ja bist du deppert 🙈
+    </QuoteElement>
+
     <div class="content">
       <p>
         Treppenläufe für Feuerwehrleute gibt es viele. Hochhäuser,
@@ -57,7 +61,13 @@ const isVideoActive = ref(false);
           ></iframe>
         </div>
       </div>
+    </div>
 
+    <QuoteElement name="Manuel B." department="BwF Laupheim">
+      Das ist mal ne wilde Sache 🦾
+    </QuoteElement>
+
+    <div class="content">
       <p>
         Hast du Bock drauf? Dann trag deine Kontaktdaten ein und wir melden uns
         sobald es etwas genaueres zum Wettkampf gibt ツ
@@ -65,14 +75,6 @@ const isVideoActive = ref(false);
 
       <InterestForm />
     </div>
-
-    <QuoteElement name="Marcus S." department="FF Taufkirchen/Vils">
-      Ja bist du deppert 🙈
-    </QuoteElement>
-
-    <QuoteElement name="Manuel B." department="BwF Laupheim">
-      Das ist mal ne wilde Sache 🦾
-    </QuoteElement>
 
     <QuoteElement name="Martin F." department="FF Salzkotten">
       ja geil
