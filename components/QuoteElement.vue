@@ -32,5 +32,26 @@ blockquote::before {
 </style>
 
 <script setup>
-defineProps(["name", "department"]);
+import { useSlots } from "vue";
+const slots = useSlots();
+
+const { name, department } = defineProps(["name", "department"]);
+
+useHead({
+  script: [
+    {
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org/",
+        "@type": "Quotation",
+        spokenByCharacter: {
+          "@type": "Person",
+          name,
+          affiliation: department,
+        },
+        text: null, // render slot here
+      }),
+    },
+  ],
+});
 </script>
