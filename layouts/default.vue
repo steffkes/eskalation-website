@@ -93,12 +93,14 @@ useHead({
           style="opacity: 0.1; height: 20px; margin: 10px"
       /></a>
 
-      <div class="my-6 px-6">
-        <div class="content">
-          <h1 class="title">{{ event.name }}</h1>
-          <p class="subtitle">{{ event.description }}</p>
+      <section class="section pb-0">
+        <div class="container is-max-desktop">
+          <div class="content">
+            <h1 class="title">{{ event.name }}</h1>
+            <p class="subtitle">{{ event.description }}</p>
+          </div>
         </div>
-      </div>
+      </section>
 
       <slot />
 
